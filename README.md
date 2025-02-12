@@ -2,6 +2,10 @@
 
 A **HealthTech Application** built using **FastAPI**, **LangChain**, **NetworkX**, and **OpenAI GPT-4** to create and interact with a medical knowledge graph. The frontend is built with **Streamlit** for an interactive UI, and the backend uses **FastAPI** to serve the knowledge graph and AI-powered insights.
 
+
+![Screen Shot 2025-02-12 at 20 57 07 PM](https://github.com/user-attachments/assets/15ec2e6c-8d83-4765-ba17-b215f4fe6894)
+![Screen Shot 2025-02-12 at 20 57 13 PM](https://github.com/user-attachments/assets/237a1eba-31fd-478e-9585-0997e70c789d)
+
 ---
 
 ## 🚀 Features
@@ -10,6 +14,8 @@ A **HealthTech Application** built using **FastAPI**, **LangChain**, **NetworkX*
 - 📊 Interactive visualization of the knowledge graph using **PyVis**.
 - 🎨 Streamlit frontend for querying the knowledge graph and generating AI insights.
 - 🔐 Uses `.env` file to store API keys securely.
+
+
 
 ---
 
