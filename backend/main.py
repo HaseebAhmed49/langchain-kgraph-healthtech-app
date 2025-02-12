@@ -84,7 +84,6 @@ def query_with_llm(entity: str):
 def visualize_graph():
     """ Generate an interactive HTML visualization of the knowledge graph """
     net = Network(notebook=False, height="600px", width="100%")
-    print("test 1")
     # Add nodes and edges safely
     for node in G.nodes():
         node_type = G.nodes[node].get("type", "Unknown")  # <-- Fix: Use .get() to avoid KeyError
@@ -94,16 +93,12 @@ def visualize_graph():
         }.get(node_type, "gray")  # Default color if type is missing
 
         net.add_node(node, label=node, color=color)
-    print("test 2")
 
     for edge in G.edges():
         relation = G[edge[0]][edge[1]].get("relation", "Unknown")  # <-- Fix: Use .get() for safety
         net.add_edge(edge[0], edge[1], title=relation)
-    print("test 3")
 
     # Save graph.html
     output_path = "static/graph.html"
     net.show(output_path, notebook=False)
-    print("test 4")
-
     return {"message": f"Graph visualization generated. Open {output_path} in a browser."}
